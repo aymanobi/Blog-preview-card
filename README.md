@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://github.com/aymanobi/Blog-preview-card](https://github.com/aymanobi/Blog-preview-card)
 - Live Site URL: [https://rainbow-manatee-82e1ed.netlify.app/](https://rainbow-manatee-82e1ed.netlify.app/)
 
 ## My process
