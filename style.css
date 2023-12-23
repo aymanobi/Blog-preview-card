@@ -1,0 +1,132 @@
+:root {
+
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Figtree', sans-serif;
+}
+
+body {
+    height: 100vh;
+    font-size: 1rem;
+    background-color: var(--Yellow);
+}
+
+main {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article-container {
+    width: 30%;
+    border: 1px solid var(--Black);
+    background-color: var(--White);
+    border-radius: 1rem;
+    padding: 20px;
+    box-shadow: 10px 10px 0px 0px var(--Black);
+    -webkit-box-shadow: 10px 10px 0px 0px var(--Black);
+    -moz-box-shadow: 10px 10px 0px 0px var(--Black);
+}
+
+.article-container .article-header {
+    border-radius: .9rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.article-container .article-header .article-image {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.article-container .category {
+    background-color: var(--Yellow);
+    color: var(--Black);
+    font-weight: 800;
+    padding: 7px;
+    max-width: 80px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+.article-container .article-details {
+    margin-bottom: 1rem;
+}
+
+.article-container .article-details .publish-info {
+    color: var(--Black);
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+
+.article-container .article-details .article-title {
+    color: var(--Black);
+    font-weight: 800;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.article-container .article-details .article-title:hover {
+    color: var(--Yellow);
+}
+
+.article-container .article-details .article-desc {
+    color: var(--Grey);
+    line-height: 1.5;
+}
+
+.article-container .author-details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.article-container .author-details .avatar {
+    width: 40px;
+}
+
+.article-container .author-details .author-name {
+    font-weight: 800;
+}
+
+/* media query */
+@media screen and (max-width: 768px) {
+    .article-container {
+        width: 80%;
+    }
+
+    .article-container .article-details .article-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .article-container {
+        width: 90%;
+    }
+
+    .article-container .article-details .article-title {
+        font-size: 1.3rem;
+    }
+
+}
